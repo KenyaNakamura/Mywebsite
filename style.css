@@ -12,7 +12,20 @@ header {
     height: auto;
     width: 80px;
     margin: 40px;
+    animation-name: medama;
+    animation-duration: 2s;
 }
+
+@keyframes medama {
+    0% {
+        width: 0;
+    }
+
+    70% {
+        width: 120px;
+    }
+}
+
 
 .header-right ul {
     display: flex;
@@ -22,7 +35,27 @@ li {
     margin-right: 40px;
     font-size: 1.4vw;
     color: #a28d69;
-    letter-spacing: .1em;
+    /* opacity: 100; */
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+.first {
+    animation-duration: 2s;
+}
+
+.second {
+    animation-duration: 4s;
 }
 
 /* セクション１ */
@@ -33,6 +66,14 @@ li {
     position: relative;
     background-size: cover;
 }
+@keyframes opa{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
 
 .name {
     font-size: 4vw;
@@ -40,6 +81,47 @@ li {
     top: 150px;
     left: 150px;
     font-weight: bold;
+}
+
+.name {
+    width: 15ch;
+    animation: typing 1.5s steps(15)2s, effect .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 0.5vh solid; */
+  }
+   
+ 
+  @keyframes typing {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+  }
+      
+  @keyframes effect {
+    50% {
+      border-color: transparent
+    }
+  }
+h4{
+    font-size: 50px;
+    text-align: center;
+    opacity: 0;
+    animation-name: opa;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+}
+@keyframes opa {
+    from{
+        opacity: 100;
+    }
+    to{
+        opacity: 0;
+    }
 }
 
 /* セクション２ */
