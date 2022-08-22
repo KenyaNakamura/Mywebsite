@@ -143,9 +143,17 @@ footer img {
         padding: 10px;
     }
 
+    #profile img {
+        margin-top: 0;
+    }
+
     .profile2 {
         display: block;
         text-align: center;
+    }
+
+    .video img {
+        margin-bottom: 0;
     }
 
     h3 {
